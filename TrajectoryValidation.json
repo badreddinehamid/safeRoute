@@ -1,0 +1,189 @@
+{
+  "contractName": "TrajectoryValidation",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "carId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "startTime",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "endTime",
+          "type": "uint256"
+        },
+        {
+          "components": [
+            {
+              "internalType": "int256",
+              "name": "latitude",
+              "type": "int256"
+            },
+            {
+              "internalType": "int256",
+              "name": "longitude",
+              "type": "int256"
+            }
+          ],
+          "internalType": "struct TrajectoryValidation.Coordinate[]",
+          "name": "path",
+          "type": "tuple[]"
+        }
+      ],
+      "name": "submitTrajectory",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "carId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "bool",
+          "name": "accepted",
+          "type": "bool"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "startSlot",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "endSlot",
+          "type": "uint256"
+        }
+      ],
+      "name": "TrajectorySubmitted",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "COLLISION_DISTANCE",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "trajIndex",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "coordIndex",
+          "type": "uint256"
+        }
+      ],
+      "name": "getTrajectoryCoordinate",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "latitude",
+          "type": "int256"
+        },
+        {
+          "internalType": "int256",
+          "name": "longitude",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getTrajectoryCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "getTrajectoryMeta",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "carId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "startSlot",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "endSlot",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "pathLength",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "TIME_SLOT",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "networks": {},
+  "schemaVersion": "3.0.0",
+  "updatedAt": "2024-01-01T00:00:00.000Z"
+}
