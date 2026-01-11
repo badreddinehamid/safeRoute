@@ -116,7 +116,7 @@ MIT License - see [LICENSE](LICENSE) file for details
 
 ## 👤 Author
 
-**Your Name** - [@badreddinehamid](https://github.com/badreddinehamid)
+**Badreddine HAMID** - [@badreddinehamid](https://github.com/badreddinehamid)
 
 ---
 
