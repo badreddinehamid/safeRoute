@@ -117,7 +117,7 @@ MIT License - see [LICENSE](LICENSE) file for details
 ## 👤 Author
 
 **Badreddine HAMID** - [@badreddinehamid](https://github.com/badreddinehamid)
-**Drif Abdelmoughit** - [@drif](https://github.com/badreddinehamid)
+**Drif Abdelmoughit** - [@drif.abdelmoughit](drif.abdelmoughit1965@gmail.com)
 
 ---
 
